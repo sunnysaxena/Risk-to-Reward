@@ -88,13 +88,11 @@ print_rr = print_risk_to_reward(rr_ratio)
 
 # check if the button is pressed or not
 if st.button('Calculate Risk to Reward'):
-    # print the BMI INDEX
-    # st.text("Risk-to-Reward ratio is : {0}".format(print_rr[1]))
+    st.text("Risk-to-Reward ratio is : {0}".format(rr_ratio))
     st.subheader("Risk-to-Reward ratio is : {0}".format(print_rr[1]))
 
     print("Risk-to-Reward Ratio:", rr_ratio)
 
-    # give the interpretation of BMI index
     if rr_ratio >= 3:
         st.success("Excellent")
     elif rr_ratio >= 2:
